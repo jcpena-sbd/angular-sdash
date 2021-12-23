@@ -1,84 +1,96 @@
 <style>
     path:hover, circle:hover {
-    stroke: #002868 !important;
-    stroke-width:2px;
-    stroke-linejoin: round;
-    fill: #002868 !important;
-    cursor: pointer;
-  }
-  #path67{
-    fill: none !important;
-    stroke: #A9A9A9 !important;
-    cursor: default;
-  }
-  #info-box {
-    display: none;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 1;
-    background-color: #ffffff;
-    border: 2px solid #BF0A30;
-    border-radius: 5px;
-    padding: 5px;
-    font-family: arial;
-  }
-  .map{float:left;
-  }
-  .map .cls-1{
-      fill: #eee;
-      stroke: #333;
-      stroke-width: 1;
-  }
-  .map svg {
-    height: auto;
-    width: 550px;
-    margin: 0 auto;
-    display: block;
-  }
-  .map .cls-1 {
-    fill: #ccc;
+  stroke: #002868 !important;
+  stroke-width:2px;
+  stroke-linejoin: round;
+  fill: #002868 !important;
+  cursor: pointer;
+}
+ 
+#path67{
+  fill: none !important;
+  stroke: #A9A9A9 !important;
+  cursor: default;
+}
+#info-box {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background-color: #ffffff;
+  border: 2px solid #BF0A30;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: arial;
+}
+.map{float:left;
+}
+.map .cls-1{
+    fill: #eee;
     stroke: #333;
     stroke-width: 1;
+}
+.map svg {
+  height: auto;
+  width: 550px;
+  margin: 0 auto;
+  display: block;
+}
+
+.map .cls-1 {
+  fill: #ccc;
+  stroke: #333;
+  stroke-width: 1;
+}
+
+.map .cls-1:hover {
+  fill: #fc0 !important;
+  cursor: help;
+}
+
+ #mapView{
+   /* width:50%;*/
+   height:400px;
+   width:48%;
+   position:relative;
+   border:1px #ccc solid;
   }
-  .map .cls-1:hover {
-    fill: #fc0 !important;
-    cursor: help;
-  }
-  .info_panel {
-    background-color: rgba(255,255,255, .8);
-    padding: 5px;
-    font-size: 12px;
-    font-family: Helvetica, Arial, sans-serif;
-    position: absolute;
-    border: 1px solid #333;
-    color: #333;
-    white-space: nowrap;
-  }
-  .info_panel::first-line {
-    font-weight: bold;
-  }
-  #Lines{display:none !important}
-  #elistado{
-    display:block;
-    stroke: #ccc solid 1px;
-  }
-  #spacer{
-    display: block;
-    width: 20px;
-    height: 50px!important;
-    float:left;
-    clear:both;
-  }
-  #Camuy{
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    stroke: #ccc solid 1px;
-  }
+.info_panel {
+  background-color: rgba(255,255,255, .8);
+  padding: 5px;
+  font-size: 12px;
+  font-family: Helvetica, Arial, sans-serif;
+  position: absolute;
+  border: 1px solid #333;
+  color: #333;
+  white-space: nowrap;
+}
+
+.info_panel::first-line {
+  font-weight: bold;
+}
+#Lines{display:none !important}
+#elistado{
+  display:block;
+  stroke: #ccc solid 1px;
+}
+#spacer{
+  display: block;
+  width: 20px;
+  height: 50px!important;
+  float:left;
+  clear:both;
+}
+#Camuy{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  stroke: #ccc solid 1px;
+}
 </style>
 <div id="info-box"></div>
 <div class="map">
