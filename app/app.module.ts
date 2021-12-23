@@ -10,25 +10,25 @@ import { MostVisitedChartComponent } from './most-visited-chart.component';
 import { ConversionChartComponent } from './conversion-chart.component';
 import { VisitorsChartComponent } from './visitors-chart.component';
 import { UsersGridComponent } from './users-grid.component';
-
+import 'jquery';
 import 'hammerjs';
 
 @NgModule({
-    imports: [
-        BrowserModule,
-        BrowserAnimationsModule,
-        LayoutModule,
-        ChartsModule,
-        GridModule
-    ],
-    declarations: [
-        AppComponent,
-        MapViewsChartComponent,
-        MostVisitedChartComponent,
-        ConversionChartComponent,
-        VisitorsChartComponent,
-        UsersGridComponent
-    ],
-    bootstrap: [AppComponent]
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    LayoutModule,
+    ChartsModule,
+    GridModule,
+  ],
+  declarations: [
+    AppComponent,
+    MapViewsChartComponent,
+    MostVisitedChartComponent,
+    ConversionChartComponent,
+    VisitorsChartComponent,
+    UsersGridComponent,
+  ],
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
