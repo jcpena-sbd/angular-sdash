@@ -36,18 +36,15 @@
     margin: 0 auto;
     display: block;
   }
-
   .map .cls-1 {
     fill: #ccc;
     stroke: #333;
     stroke-width: 1;
   }
-
   .map .cls-1:hover {
     fill: #fc0 !important;
     cursor: help;
   }
-
   .info_panel {
     background-color: rgba(255,255,255, .8);
     padding: 5px;
@@ -58,7 +55,6 @@
     color: #333;
     white-space: nowrap;
   }
-
   .info_panel::first-line {
     font-weight: bold;
   }
@@ -84,9 +80,7 @@
     stroke: #ccc solid 1px;
   }
 </style>
-
 <div id="info-box"></div>
-
 <div class="map">
   <svg
     id="Camuy"
@@ -266,7 +260,6 @@
         "region_code": "stg",
         "cases": 3
     }
-
   ];
   var temp_array= regions.map(function(item){
     return item.cases;
@@ -298,6 +291,6 @@
             left: mouseX - ($('.info_panel').width()/2)
         });
     });
-
+    $('.map').appendTo('mapView');
   });
 </script>

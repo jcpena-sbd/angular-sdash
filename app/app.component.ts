@@ -8,6 +8,7 @@ import { TileLayoutResizeEvent } from '@progress/kendo-angular-layout';
                 <kendo-tilelayout-item-body>
                 <map-views-chart></map-views-chart>
                     <section class="content" *ngIf="html" [innerHTML]="html"></section>
+                    <div id="mapView"></div>
                 </kendo-tilelayout-item-body>
             </kendo-tilelayout-item>
 
