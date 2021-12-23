@@ -4,7 +4,7 @@ import { TileLayoutResizeEvent } from '@progress/kendo-angular-layout';
   selector: 'my-app',
   template: `
         <kendo-tilelayout [columns]="4" [rowHeight]="400" [resizable]="true" [reorderable]="true">
-            <kendo-tilelayout-item title="Map Views" [col]="1" [colSpan]="2" [rowSpan]="2">
+            <kendo-tilelayout-item title="Map Views" [col]="1" [colSpan]="2" [rowSpan]="1">
                 <kendo-tilelayout-item-body>
                 <map-views-chart></map-views-chart>
                     <section class="content" *ngIf="html" [innerHTML]="html"></section>
